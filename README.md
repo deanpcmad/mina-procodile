@@ -1,41 +1,32 @@
-# Mina::Procodile
+# Mina Procodile
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mina/procodile`. To experiment with that code, run `bin/console` for an interactive prompt.
+[Mina](https://github.com/mina-deploy/mina) tasks for handling [Procodile](https://github.com/adamcooke/procodile)
 
-TODO: Delete this and the text above, and describe your gem
+This gem provides several mina tasks:
+
+```ruby
+mina procodile:start   # Start Procodile processes
+mina procodile:stop    # Stop Procodile processes
+mina procodile:restart # Restart Procodile processes
+mina procodile:status  # View Procodile status
+```
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'mina-procodile'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install mina-procodile
+gem "mina-procodile", require: false
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this to your `config/deploy.rb` file
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+require "mina/procodile"
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mina-procodile.
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+Fork this repo, commit any changes and create a pull request :)

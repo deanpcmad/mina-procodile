@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dean Perry"]
   spec.email         = ["dean@voupe.com"]
 
-  spec.summary       = "Mina scripts for controlling Procodile"
+  spec.summary       = "Mina tasks for controlling Procodile"
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/deanpcmad/mina-procodile"
   spec.license       = "MIT"
