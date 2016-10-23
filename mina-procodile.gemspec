@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "mina-procodile"
-  spec.version       = "1.0.2"
+  spec.version       = "1.0.3"
   spec.authors       = ["Dean Perry"]
   spec.email         = ["dean@voupe.com"]
 
