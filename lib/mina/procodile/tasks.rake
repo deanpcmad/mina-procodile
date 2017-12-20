@@ -26,7 +26,7 @@ namespace :procodile do
 
   def procodile_command(command)
     queue! %[
-      #{procodile_cmd} #{command} -r #{deploy_to}/#{current_path}
+      #{fetch(:procodile_cmd)} #{command} -r #{fetch(:deploy_to)}/#{fetch(:current_path)}
     ]
   end
 end
