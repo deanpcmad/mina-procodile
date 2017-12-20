@@ -2,7 +2,7 @@ require 'mina/bundler'
 require 'mina/rails'
 
 namespace :procodile do
-  set_default :procodile_cmd, -> { "procodile" }
+  set :procodile_cmd, -> { "procodile" }
 
   desc 'Start Procodile processes'
   task start: :environment do
